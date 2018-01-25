@@ -26,22 +26,22 @@ material:
 
 ---
 
-Math in Solidity is pretty straightforward. The following operations are the same as in most programming languages:
+Математика в Solidity довольно проста. Следующие операции такие же, как на большинстве языков программирования: 
 
-* Addition: `x + y`
-* Subtraction: `x - y`,
-* Multiplication: `x * y`
-* Division: `x / y`
-* Modulus / remainder: `x % y` _(for example, `13 % 5` is `3`, because if you divide 5 into 13, 3 is the remainder)_
+* Сложение: `x + y`
+* Вычитание: `x - y`,
+* Умножение: `x * y`
+* Деление: `x / y`
+* Модуль / остаток: `x % y` _(например, `13 % 5` это `3`, потому что, если вы разделите 5 на 13, 3 это остаток)_
 
-Solidity also supports an **_exponential operator_** (i.e. "x to the power of y", x^y):
+Solidity также поддерживает **_экспоненциальный оператор_** (т.е. "x в степени y", x^y):
 
 ```
-uint x = 5 ** 2; // equal to 5^2 = 25
+uint x = 5 ** 2; // тоже самое 5^2 = 25
 ```
 
-# Put it to the test
+# Проверочный тест
 
-To make sure our Zombie's DNA is only 16 characters, let's make another `uint` equal to 10^16. That way we can later use the modulus operator `%` to shorten an integer to 16 digits.
+Чтобы убедиться, что наша ДНК Зомби составляет всего 16 символов, давайте сделаем еще одно значение `uint` равным 10^16. Таким образом, мы сможем позже использовать оператор модуля `%` для сокращения целого числа до 16 цифр.
 
-1. Create a `uint` named `dnaModulus`, and set it equal to **10 to the power of `dnaDigits`**.
+1. Создайте `uint` с именем `dnaModulus`, и установите его равным **10 в степени `dnaDigits`**.
